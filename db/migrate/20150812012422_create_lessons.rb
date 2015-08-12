@@ -1,6 +1,6 @@
-class CreateLessions < ActiveRecord::Migration
+class CreateLessons < ActiveRecord::Migration
   def change
-    create_table :lessions do |t|
+    create_table :lessons do |t|
       t.string :name
       t.references :category, index: true, foreign_key: true
 
