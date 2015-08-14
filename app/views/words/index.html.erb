@@ -1,8 +1,6 @@
-<% provide :title, "Word List") %>
+<% provide :title, "Word List" %>
 <h1>Word List</h1>
 
-<ul class="words">
-  <%= render @words %>
-</ul>
+<%= render "shared/filter_form" %>
 
 <%= will_paginate @words %>
