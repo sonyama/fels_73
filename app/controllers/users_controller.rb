@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.paginate(page: params[:page], per_page:10)
+    @users = User.paginate page: params[:page], per_page:10
   end
 
   def show
@@ -9,12 +9,14 @@ class UsersController < ApplicationController
   end
 
   def new
+    sign_out if signed_in?
     @user = User.new
   end
 
   def create
     @user = User.new user_params
     if @user.save
+      sign_in @user
       flash[:success] = t "webcome"
       redirect_to @user
     else
