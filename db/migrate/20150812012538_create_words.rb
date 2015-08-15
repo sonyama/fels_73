@@ -4,7 +4,8 @@ class CreateWords < ActiveRecord::Migration
       t.string :content
       t.string :image
       t.string :sound
-      t.references :lession, index: true, foreign_key: true
+      t.references :lesson, index: true, foreign_key: true
+      t.references :category, index: true, foreign_key: true
 
       t.timestamps null: false
     end
