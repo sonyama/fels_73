@@ -188,3 +188,25 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
+
+/* Categories index */
+
+.categories {
+  list-style: none;
+  margin: 0;
+      text-align: left;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+    font-size: 0.5em;
+    line-height: 0.8em;
+  }
+  p {
+    font-size: 0.5em;
+  }
+  h4 {
+    text-align: right;
+  }
+}
+
