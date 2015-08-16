@@ -37,6 +37,13 @@ en:
   request_signin: "Please sign in."
   error_sigin: "Invalid email/password combination"
   users: "Users"
-  help: "Help"
   show_user: "Show info user"
   error: "Errors"
+  static_page:
+    home: "Home"
+    help: "Help"
+    login: "Login"
+  category_page:
+    categories: "Categories"
+    list: "Category List"
+
