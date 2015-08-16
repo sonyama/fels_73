@@ -46,4 +46,9 @@ en:
   category_page:
     categories: "Categories"
     list: "Category List"
+  word_page:
+    list: "Word List"
+    all: "All"
+    search: " Search"
+    words: "Words"
 

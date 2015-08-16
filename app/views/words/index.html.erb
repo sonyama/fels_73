@@ -1,0 +1,7 @@
+<% provide :title, t("word_page.list") %>
+<h1><%= t("word_page.list") %></h1>
+
+  <%= render "shared/filter_form" %>
+  <div id="word_table">
+    <%= render "words_table" %>
+  </div>

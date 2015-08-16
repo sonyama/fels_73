@@ -1,1 +1,7 @@
 default_avatar: "rails.png"
+paginate_per_page: 15
+filter:
+  Learned: learned
+  Not_learned: not_learned
+  All: take_all
+  Alphabet: alphabet

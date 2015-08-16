@@ -1,0 +1,7 @@
+$("#word_table #table-list").append("<%= j render @words %>");
+<% if @words.next_page %>
+  $(".pagination").replaceWith("<%= j will_paginate @words %>");
+<% else %>
+  $(".pagination").remove();
+<% end %>
+$("#word_table").html("<%= j render 'words_table' %>");
