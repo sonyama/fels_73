@@ -23,6 +23,7 @@ en:
   hello: "Hello world"
   signup: "Sign up"
   signin: "Sign in"
+  signout: "Sign out"
   update: "Update"
   signup_now: "Sign up now!"
   remember_me: "Remember me on this computer"
