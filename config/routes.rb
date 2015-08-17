@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   resources :words, only: [:index]
   resources :users
   resources :categories
+
+  namespace :admin do
+    root "categories#index"
+    resources :categories
+  end
 end

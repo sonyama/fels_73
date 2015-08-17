@@ -1,0 +1,9 @@
+<tr>
+	<td><%= category.name %></td>
+	<td><%= category.description.truncate 50 %></td>
+	<td>
+		<%= link_to t("delete"), admin_category_path(category), method: :delete %>
+    <%= t("category_page.space") %>
+		<%= link_to t("edit"), edit_admin_category_path(category) %>
+	</td>
+</tr>
